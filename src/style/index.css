@@ -1,0 +1,27 @@
+html,
+body {
+  min-width: 320px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #f3f3f3;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+#app {
+  height: 100%;
+}

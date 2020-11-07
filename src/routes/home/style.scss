@@ -1,0 +1,40 @@
+@import "../../assets/sass/mixins.scss";
+
+.home {
+  width: 100%;
+  max-width: 1400px;
+  padding: 35px 15px 35px 15px;
+  margin: 25vh auto 0;
+
+  & li {
+    text-align: center;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    line-height: 110%;
+    transition: 0.1s all ease-out;
+    font-weight: 300;
+
+    &:hover {
+      font-weight: bold;
+      color: #de3737;
+      cursor: pointer;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 50px;
+    }
+
+    @include response(tab-port) {
+      font-size: 64px;
+    }
+
+    @include response(phone) {
+      font-size: 48px;
+    }
+
+    @include response(sm-phone) {
+      font-size: 36px;
+    }
+  }
+}
