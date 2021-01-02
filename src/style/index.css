@@ -22,6 +22,15 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #app {
   height: 100%;
 }

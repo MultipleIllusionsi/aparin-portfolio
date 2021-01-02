@@ -1,6 +1,6 @@
 import { h } from "preact";
 
-import style from "./style.scss";
+import style from "./index.scss";
 
 const About = () => {
   return (

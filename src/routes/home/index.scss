@@ -2,11 +2,23 @@
 
 .home {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1520px;
   padding: 35px 15px 35px 15px;
   margin: 25vh auto 0;
 
   & li {
+    &.noLink {
+      color: #d6d6d6;
+    }
+
+    &.hasLink {
+      &:hover {
+        font-weight: bold;
+        color: #de3737;
+        cursor: pointer;
+      }
+    }
+
     text-align: center;
     font-size: 96px;
     text-transform: uppercase;
@@ -14,12 +26,6 @@
     line-height: 110%;
     transition: 0.1s all ease-out;
     font-weight: 300;
-
-    &:hover {
-      font-weight: bold;
-      color: #de3737;
-      cursor: pointer;
-    }
 
     &:not(:last-of-type) {
       margin-bottom: 50px;
