@@ -1,12 +1,33 @@
+@import "../../../assets/sass/mixins.scss";
+
+.categoriesListWrapper {
+  margin-top: 275px;
+  margin-bottom: 150px;
+
+  @include response(tab-port) {
+    margin-top: 225px;
+    margin-bottom: 100px;
+  }
+
+  @include response(phone) {
+    margin-top: 150px;
+    margin-bottom: 75px;
+  }
+
+  @include response(sm-phone) {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+}
+
 .fullSize {
   width: 100%;
 }
 
+// 1 COLUMN = 8.3%
 .cl {
   max-width: 1520px;
   width: 100%;
-  margin: 0 auto;
-  display: block;
 }
 
 .cl12 {
@@ -14,10 +35,26 @@
 }
 
 .cl10 {
-  width: 70%;
+  width: 83%;
+}
+
+.cl7 {
+  width: 58.1%;
+}
+
+.cl4 {
+  width: 33.2%;
 }
 
 /////////////////// UTILITIES
+.flex {
+  display: flex !important;
+}
+
+.flexEnd {
+  align-items: flex-end;
+}
+
 .rightSide {
   display: block;
   margin-left: auto;
