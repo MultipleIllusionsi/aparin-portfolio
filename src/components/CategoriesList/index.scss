@@ -2,6 +2,10 @@
 
 .categoriesList {
   & li {
+    a {
+      display: block;
+    }
+
     &.noLink {
       color: #d6d6d6;
     }
