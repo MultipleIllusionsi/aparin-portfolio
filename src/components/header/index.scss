@@ -1,17 +1,30 @@
+@import "../../assets/sass/mixins.scss";
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100%;
-  background: #f3f3f383;
 }
 
 .nav {
   width: 100%;
   max-width: 1520px;
-  padding: 35px 15px 35px 15px;
+  padding: 35px 15px;
   margin: 0 auto;
+
+  @include response(tab-port) {
+    padding: 30px 15px;
+  }
+
+  @include response(phone) {
+    padding: 20px 15px;
+  }
+
+  @include response(sm-phone) {
+    padding: 15px;
+  }
 }
 
 .list {
@@ -27,6 +40,10 @@
     display: block;
     font-size: 24px;
     text-decoration: none;
+
+    @include response(phone) {
+      font-size: 20px;
+    }
   }
 }
 

@@ -1,11 +1,18 @@
 @import "../../../assets/sass/mixins.scss";
 
 .sport {
-  margin-top: 130px;
-
   & .headingWrapper {
+    margin-top: 130px;
     display: flex;
     justify-content: center;
+
+    @include response(tab-port) {
+      margin-top: 100px;
+    }
+
+    @include response(phone) {
+      margin-top: 80px;
+    }
 
     & .headingContainer {
       text-align: center;
@@ -14,6 +21,10 @@
         font-weight: 300;
         color: #696969;
         font-style: italic;
+
+        @include response(phone) {
+          font-size: 20px;
+        }
 
         &:hover {
           color: #2f2f2f;
@@ -29,6 +40,18 @@
         text-transform: uppercase;
         margin-top: 10px;
         letter-spacing: 10px;
+
+        @include response(tab-port) {
+          font-size: 60px;
+        }
+
+        @include response(phone) {
+          font-size: 48px;
+        }
+
+        @include response(sm-phone) {
+          font-size: 36px;
+        }
       }
     }
   }
@@ -37,6 +60,10 @@
     margin-top: 75px;
     display: flex;
     flex-direction: column;
+
+    @include response(phone) {
+      margin-top: 50px;
+    }
 
     & > *:not(:last-child) {
       margin-bottom: 150px;
