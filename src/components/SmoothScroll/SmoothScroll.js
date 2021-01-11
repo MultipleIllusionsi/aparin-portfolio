@@ -40,11 +40,9 @@ const SmoothScroll = ({ main, scrollable }) => {
     }));
 
     // translate the scrollable element
-    if (scrollable) {
-      scrollable.style.transform = `translate3d(0,${
-        -1 * renderedStyles.previous
-      }px,0)`;
-    }
+    scrollable.style.transform = `translate3d(0,${
+      -1 * renderedStyles.previous
+    }px,0)`;
 
     // нужно просто инициализировать этот массив из классов, и потом уже к нему докидывать обновленные значения скролла и окна, а не каждый
     // будет работать, если будут загружены изображения (иначе ошибка)
