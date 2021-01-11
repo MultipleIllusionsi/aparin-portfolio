@@ -2,16 +2,16 @@
 
 .sport {
   & .headingWrapper {
-    margin-top: 130px;
+    padding-top: 130px;
     display: flex;
     justify-content: center;
 
     @include response(tab-port) {
-      margin-top: 100px;
+      padding-top: 100px;
     }
 
     @include response(phone) {
-      margin-top: 80px;
+      padding-top: 80px;
     }
 
     & .headingContainer {

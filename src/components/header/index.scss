@@ -1,18 +1,37 @@
 @import "../../assets/sass/mixins.scss";
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100%;
+.active {
+  color: #03f2f3 !important;
 }
 
-.nav {
-  width: 100%;
+.header {
   max-width: 1520px;
   padding: 35px 15px;
   margin: 0 auto;
+  padding: 35px 15px;
+  mix-blend-mode: difference;
+  top: 0px;
+  left: 0px;
+  color: rgb(255, 255, 255);
+  right: 0px;
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  align-items: center;
+  pointer-events: none;
+  justify-content: space-between;
+
+  & a {
+    pointer-events: all;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include response(phone) {
+      font-size: 20px;
+    }
+  }
 
   @include response(tab-port) {
     padding: 30px 15px;
@@ -25,28 +44,4 @@
   @include response(sm-phone) {
     padding: 15px;
   }
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  & a {
-    color: #2f2f2f;
-    font-weight: 700;
-    display: block;
-    font-size: 24px;
-    text-decoration: none;
-
-    @include response(phone) {
-      font-size: 20px;
-    }
-  }
-}
-
-.active {
-  color: #f60100 !important;
 }
